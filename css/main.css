@@ -1,0 +1,46 @@
+body {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	background-image: url("../images/cutlery.jpg");
+	background-size: cover;
+	color: white;
+}
+
+button {
+	background-color: rgba(127, 127, 127, 1);
+	color: rgba(175, 0, 0, 1);
+}
+
+input {
+	color: rgba(175, 0, 0, 1);
+}
+
+input,
+button {
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.title {
+	margin-top: 5em;
+	margin-bottom: 3em;
+	text-align: center;
+}
+
+.form {
+	font-size: 1.8em;
+}
+
+.form input {
+	margin-bottom: 0.5em;
+}
+
+.fa-usd {
+	margin-right: 0.1em;
+	margin-left: 0.3em;
+}
+
+#customtip {
+	width: 14%;
+}
+

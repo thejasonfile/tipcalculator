@@ -7,32 +7,37 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
-	<div>
+	<div class="container title">
 		<h1>Tip Calculator</h1>
-		<h3>Enter bill amount and select tip amount.<h3>
-		<h3>The tip amount and new total will be shown.</h3>
-
+		<h4>Enter bill amount and select tip amount.<h4>
+		<h4>The tip amount and new total will be shown.</h4>
+	</div>
+	<div class="container form">
 		<form>
-			<label>Bill amount</label>
-			<input type="number" name="subtotal" required value="0.00">
+			<label>Bill amount</label><br />
+			<i class="fa fa-usd"></i><input type="number" name="subtotal" id="subtotal" placeholder="0.00" required><br />
+			<br />
 
-			<label>Tip amount</label>
+			<label>Tip amount</label><br />
 			<button type="btn">15%</button>
-			<input type="number" name="15pertotal" readonly>
+			<i class="fa fa-usd"></i><input type="number" name="15pertotal" readonly><br />
 			<button type="btn">20%</button>
-			<input type="number" name="20pertotal" readonly>
+			<i class="fa fa-usd"></i><input type="number" name="20pertotal" readonly><br />
 			<button type="btn">25%</button>
-			<input type="number" name="25pertotal" readonly>
-			<input type="text">
-			<input type="number" name="customtotal" readonly>
+			<i class="fa fa-usd"></i><input type="number" name="25pertotal" readonly><br />
+			<input type="text" id="customtip" placeholder="%">
+			<i class="fa fa-usd"></i><input type="number" name="customtotal" readonly><br />
+			<br />
 
-			<label>Total</label>
-			<input type="number" name="total" readonly>
-		</form>	
+			<label>Total</label><br />
+			<i class="fa fa-usd"></i><input type="number" name="total" readonly>
+		</form>
+	</div>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
