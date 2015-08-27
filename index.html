@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Tip Calculator</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<div>
+		<h1>Tip Calculator</h1>
+		<h3>Enter bill amount and select tip amount.<h3>
+		<h3>The tip amount and new total will be shown.</h3>
+
+		<form>
+			<label>Bill amount</label>
+			<input type="number" name="subtotal" required value="0.00">
+
+			<label>Tip amount</label>
+			<button type="btn">15%</button>
+			<input type="number" name="15pertotal" readonly>
+			<button type="btn">20%</button>
+			<input type="number" name="20pertotal" readonly>
+			<button type="btn">25%</button>
+			<input type="number" name="25pertotal" readonly>
+			<input type="text">
+			<input type="number" name="customtotal" readonly>
+
+			<label>Total</label>
+			<input type="number" name="total" readonly>
+		</form>	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
