@@ -24,20 +24,17 @@
 			<br />
 
 			<label>Tip amount</label><br />
-			<button type="btn">15%</button>
-			<i class="fa fa-usd"></i><input type="number" name="15pertotal" readonly><br />
-			<button type="btn">20%</button>
-			<i class="fa fa-usd"></i><input type="number" name="20pertotal" readonly><br />
-			<button type="btn">25%</button>
-			<i class="fa fa-usd"></i><input type="number" name="25pertotal" readonly><br />
+			<button type="button" id="15per">15%</button>
+			<button type="button" id="20per">20%</button>
+			<button type="button" id="25per">25%</button>
 			<input type="text" id="customtip" placeholder="%">
-			<i class="fa fa-usd"></i><input type="number" name="customtotal" readonly><br />
 			<br />
-
-			<label>Total</label><br />
-			<i class="fa fa-usd"></i><input type="number" name="total" readonly>
 		</form>
 	</div>
+	<div class="container total">
+		<h2>Total</h2>
+		<div class="tipamount"></div>
+		<div class="totalamount"></div>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
