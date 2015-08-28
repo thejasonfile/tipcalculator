@@ -1,45 +1,38 @@
-$(document).ready(function() {
-	
-	$("button").click(function() {
-		if ($("#subtotal").val() === "") {
-			alert("Please enter a valid bill amount.");
-		} else {
-			$("#15per").click(function() {
-			var sub = parseFloat($("#subtotal").val())
-			var tip = sub * 0.15;
-			var total = sub + tip;
-			$(".tipamount").html(tip.toFixed(2));
-			$(".totalamount").html(total.toFixed(2));
-			});
 
-			$("#20per").click(function() {
-				var sub = parseFloat($("#subtotal").val())
-				var tip = sub * 0.20;
-				var total = sub + tip;
-				$(".tipamount").html(tip.toFixed(2));
-				$(".totalamount").html(total.toFixed(2));
-			});
 
-			$("#25per").click(function() {
-				var sub = parseFloat($("#subtotal").val())
-				var tip = sub * 0.25;
-				var total = sub + tip;
-				$(".tipamount").html(tip.toFixed(2));
-				$(".totalamount").html(total.toFixed(2));
-			});
+//set tip % by which button is clicked
+	function doTheMath(rate) {
+		var sub = parseFloat($("#subtotal").val())
+		var tip = sub * rate;
+		var total = sub + tip;
+		$(".tipamount").html(tip.toFixed(2));
+		$(".totalamount").html(total.toFixed(2));
+	}
 
-			$("#custom").click(function() {
+$("button").click(function() {
+	if ($("#subtotal").val() === "") {
+	alert("Please enter a valid bill amount");
+	} else {
+		switch (this.id) {
+			case "15per":
+				rate = 0.15;
+				break;
+			case "20per":
+				rate = 0.20;
+				break;
+			case "25per":
+				rate = 0.25;
+				break;
+			case "custom":
+				rate = parseFloat($("#customtip").val() / 100);
 				if ($("#customtip").val() === "") {
-					alert("Please enter a valid tip amount.")
-				} else {
-					var sub = parseFloat($("#subtotal").val())
-					var tip = sub * (parseFloat($("#customtip").val()) / 100) ;
-					var total = sub + tip;
-					$(".tipamount").html(tip.toFixed(2));
-					$(".totalamount").html(total.toFixed(2));
+					alert("Please enter a valid custom percentage.")
 				}
-			});
+				break;
 		}
-	})
+	//determine different dollar amounts and add them to the HTML
+	doTheMath(rate);	
+	}
 })
-	
+
+
