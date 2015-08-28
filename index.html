@@ -23,18 +23,19 @@
 			<i class="fa fa-usd"></i><input type="number" name="subtotal" id="subtotal" placeholder="0.00" required><br />
 			<br />
 
-			<label>Tip amount</label><br />
+			<label>Standard Tip Amounts</label><br />
 			<button type="button" id="15per">15%</button>
 			<button type="button" id="20per">20%</button>
-			<button type="button" id="25per">25%</button>
-			<input type="text" id="customtip" placeholder="%">
+			<button type="button" id="25per">25%</button><br />
+			<p>Enter custom amount and click the '%' button</p>
+			<button type="button" id="custom">%</button>
+			<input type="text" id="customtip" placeholder="custom">
 			<br />
 		</form>
 	</div>
 	<div class="container total">
-		<h2>Total</h2>
-		<div class="tipamount"></div>
-		<div class="totalamount"></div>
+		<span>Tip: $</span><span class="tipamount"></span><br />
+		<span>Total: $</spam><spam class="totalamount"></span>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
