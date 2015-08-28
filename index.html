@@ -19,23 +19,27 @@
 	</div>
 	<div class="container form">
 		<form>
-			<label>Bill amount</label><br />
-			<i class="fa fa-usd"></i><input type="number" name="subtotal" id="subtotal" placeholder="0.00" required><br />
-			<br />
-
-			<label>Standard Tip Amounts</label><br />
-			<button type="button" id="15per">15%</button>
-			<button type="button" id="20per">20%</button>
-			<button type="button" id="25per">25%</button><br />
-			<p>Enter custom amount and click the '%' button</p>
-			<button type="button" id="custom">%</button>
-			<input type="text" id="customtip" placeholder="custom">
-			<br />
+			<div class="billamountsection">
+				<label>Bill amount</label><br />
+				<i class="fa fa-usd"></i><input type="number" name="subtotal" id="subtotal" placeholder="0.00" required><br />
+			</div>
+			<div class="standardtips">
+				<label>Standard Tip Amounts</label><br />
+				<button type="button" id="15per">15%</button>
+				<button type="button" id="20per">20%</button>
+				<button type="button" id="25per">25%</button><br />
+			</div>
+			<div class="customtips">
+				<p>Enter custom amount and click the '%' button</p>
+				<input type="text" id="customtip" placeholder="custom">
+				<button type="button" id="custom">%</button>
+				
+			</div>
 		</form>
 	</div>
 	<div class="container total">
-		<span>Tip: $</span><span class="tipamount"></span><br />
-		<span>Total: $</spam><spam class="totalamount"></span>
+		<span>Tip: <i class="fa fa-usd"></i></span><span class="tipamount"></span><br />
+		<span>Total: <i class="fa fa-usd"></i></spam><spam class="totalamount"></span>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -3,11 +3,12 @@ body {
 	text-align: center;
 	background-image: url("../images/cutlery.jpg");
 	background-size: cover;
+	background-repeat: none;
 	color: white;
 }
 
 button {
-	background-color: rgba(127, 127, 127, 1);
+	background-color: rgba(200, 127, 127, 1);
 	color: rgba(175, 0, 0, 1);
 }
 
@@ -35,13 +36,24 @@ button {
 	margin-bottom: 0.5em;
 }
 
+.form p {
+	font-size: 0.7em;
+}
+
+.billamountsection,
+.standardtips,
+.customtips
+ {
+	margin-bottom: 1em;
+}
+
 .fa-usd {
 	margin-right: 0.1em;
 	margin-left: 0.3em;
 }
 
 #customtip {
-	width: 14%;
+	width: 30%;
 }
 
 .total span {
